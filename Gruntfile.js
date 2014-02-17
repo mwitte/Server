@@ -106,7 +106,6 @@ module.exports = function (grunt) {
             console.info('You should specify the path to the app dist');
             console.info('Create a build/buildProperties.json and define the app dir.');
             console.info('Look into the buildDefaultProperties.json for help.');
-            return;
             console.log('Fallback: Load app from ' + buildProperties.appDistUrl);
             grunt.task.run(['curl:app', 'unzip:appdist', 'clean:tmp']);
         }
