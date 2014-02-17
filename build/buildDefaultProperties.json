@@ -1,0 +1,6 @@
+{
+    "deploydir": "/opt/appserver/webapps/webstershop",
+    "app": "/path/to/your/appshim",
+    "dist": "dist",
+    "src": "src"
+}
