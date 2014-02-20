@@ -6,7 +6,6 @@ use Ratchet\ConnectionInterface;
 use TechDivision\WebSocketContainer\Handlers\HandlerConfig;
 use TechDivision\WebSocketContainer\Handlers\AbstractHandler;
 
-
 class SocketHandler extends AbstractHandler
 {
 
@@ -39,6 +38,7 @@ class SocketHandler extends AbstractHandler
     {
         error_log('SocketHandler: onMessage');
         error_log(var_export($message, true));
+        $connection->send('griasdi');
     }
 
     /**
